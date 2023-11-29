@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   <link rel="icon" type="image/x-icon" href="https://www.stemplayer.com/favicon.svg">
+   <title>Web Stem Separator</title>
+   <style>
+      .center {
+         height: 50vh;
+         display: none;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .wave {
+         width: 10px;
+         height: 150px;
+         background: linear-gradient(45deg, rgba(48,19,0,1) 0%, rgba(108,48,0,1) 100%);
+         margin: 15px;
+         animation: wave 1s linear infinite;
+         border-radius: 20px;
+     }
+
+     .wave:nth-child(2) {
+         animation-delay: 0.1s;
+     }
+
+     .wave:nth-child(3) {
+         animation-delay: 0.2s;
+     }
+
+     .wave:nth-child(4) {
+         animation-delay: 0.3s;
+     }
+
+     .wave:nth-child(5) {
+         animation-delay: 0.4s;
+     }
+
+     .wave:nth-child(6) {
+         animation-delay: 0.5s;
+     }
+
+     .wave:nth-child(7) {
+         animation-delay: 0.6s;
+     }
+
+     .wave:nth-child(8) {
+         animation-delay: 0.7s;
+     }
+
+     .wave:nth-child(9) {
+         animation-delay: 0.8s;
+     }
+
+     .wave:nth-child(10) {
+         animation-delay: 0.9s;
+     }
+
+     @keyframes wave {
+         0% {
+             transform: scale(0);
+         }
+
+         50% {
+             transform: scale(1);
+         }
+
+         100% {
+             transform: scale(0);
+         }
+     }
+   </style>
+</head>
+
+<body>
+
+   <div class="header">
+      <h1>Be Our Member!</h1>
+      <div class="user-actions">
+         <button id="signupButton" href="signup.html">Sign Up</button>
+         <button id="signinButton" href="signin.html">Sign In</button>
+
+      </div>
+   </div>
+
+   <div class="container">
+      <h1>EN-STEMS</h1>
+      <input type="file" id="audioFile" accept=".mp3, .wav" />
+      <button id="separateButton">Separate</button>
+      <select id="outputFormat">
+         <option value="mp3">MP3</option>
+         <option value="wav">WAV</option>
+      </select>
+      <select id="stemSelection">
+         <option value="2stems">2 Stems</option>
+         <option value="4stems">4 Stems</option>
+         <option value="5stems">5 Stems</option>
+      </select>
+   </div>
+   <div class="stems" id="stems">
+      <!-- Stem download buttons will be added here dynamically -->
+   </div>
+   <div class="center" id="loadingContainer">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+   </div>
+   <script type="text/javascript" src="../script.js"></script>
+   <script>
+      document.getElementById('audioFile').addEventListener('change', function (event) {
+         const fileInput = event.target;
+         const files = fileInput.files;
+         if (files.length > 0) {
+            const selectedFile = files[0];
+         }
+      });
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+body {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-align: center;
+   background-color: #7a624a;
+   color: #ffffff;
+}
+
+button{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bolder;
+}
+
+.container {
+   margin: 50px auto;
+   padding: 20px;
+   background-color: #3b3026;
+   /* Container background color */
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+   font-size: 24px;
+}
+
+#audioFile {
+   padding: 10px;
+   margin: 10px;
+   background-color: #411900;
+   color: #ffffff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bolder;
+}
+
+button,
+select {
+   padding: 10px;
+   margin: 10px;
+   background-color: #411900;
+   /* Kanye's stem player highlight color */
+   color: #ffffff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bolder;
+}
+
+.stems {
+   display: none;
+   margin: 20px auto;
+}
+
+button.download {
+   background-color: #666;
+   margin: 5px;
+}
+
+button.download:hover {
+   background-color: #333;
+}
+
+.stem-container {
+   margin: 20px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+h3 {
+   margin-bottom: 5px;
+}
+
+.download {
+   margin-top: 5px;
+   background-color: #ec7f31;
+}
+
+.download-all {
+   margin-top: 10px;
+   background-color: #ec7f31;
+}
+
+#stems {
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+   justify-content: center;
+   flex-direction: column;
+}
+
+input{
+   background-color: #3b3026;
+   border: #7a624a 2px solid;
+   border-radius: 5px;
+   color: white;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bolder;
+}
+
+label{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bolder;
+   color: white;
+}
